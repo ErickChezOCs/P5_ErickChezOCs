@@ -1,5 +1,5 @@
 /* Intégration des produits de l'API dans la page index.html */
-console.log('La page index nous a correctement chargé!')
+console.log('La page index a correctement chargé le fichier script.js!')
 
 function getAllProducts() {
     // cette fonction se sert de fetch pour récupérer tous les produits de l'API  //
@@ -11,7 +11,6 @@ function getAllProducts() {
         .then(function (res) {
             // res est un array contenant tous les produits récupérés de l'API, cet array est passé en argument à displayProducts //
          displayProducts(res);
-        /*console.log(res); */
         })
         .catch(function (err) {
             console.log("Une erreur s'est produite",err);
